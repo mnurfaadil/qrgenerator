@@ -1,0 +1,9 @@
+# Abaikan semua isi dalam direktori data dan output
+bin/*
+data/*
+output/*
+
+# Tapi jangan abaikan file .gitkeep
+!bin/.gitkeep
+!data/.gitkeep
+!output/.gitkeep
