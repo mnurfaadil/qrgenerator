@@ -2,6 +2,12 @@
 
 ## Build on your own
 
+Tambahkan pustaka yang digunakan
+
+```shell
+go get github.com/skip2/go-qrcode
+```
+
 Jalankan perintah dibawah untuk membangun sendiri program
 
 ```shell
