@@ -12,6 +12,14 @@ make build
 
 Jalankan perintah ini untuk membuat qr
 
+JSON
+
 ```shell
 ./bin/qrgenerator -in ./data/input.json -out ./output/output.png
+```
+
+TXT
+
+```shell
+./bin/qrgenerator -in ./data/raw.txt -out ./output/raw.png
 ```

@@ -1,4 +1,4 @@
-module qrgenerator
+module github.com/mnurfaadil/qrgenerator
 
 go 1.22.2
 
