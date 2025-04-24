@@ -30,13 +30,13 @@ func main() {
 	if err != nil {
 		log.Fatalf("Gagal membaca file: %v\n", err)
 	}
-	
-	// Compact JSON
-	var buffer bytes.Buffer
 
+	// Coba compact JSON, jika gagal anggap sebagai raw text
+	var buffer bytes.Buffer
 	err = json.Compact(&buffer, data)
 	if err != nil {
-		log.Fatalf("Gagal melakukan compact JSON: %v\n", err)
+		// Jika bukan JSON, gunakan data asli sebagai raw text
+		buffer.Write(data)
 	}
 	data = buffer.Bytes()
 
